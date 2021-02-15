@@ -1,0 +1,12 @@
+{signal: [
+  {name: 'LAUNCH CLK',   wave: '01...0...1...0.', node: '.1.......2'},
+  
+  {name: 'LATCH CLK',    wave: '10...1...0...1.', data: ['VAL!=0'], node: '.....a.......b'},
+  {name: 'DATA',         wave: '=.xx=.....xx=..', data: ['', 'Data 1', 'Data 2', 'Data 3'], node: '..345.....678'},
+],
+  edge: [
+  '1<~>5 data max', '1<~>a clk min', 'a<~>5 dv_bre' 
+  ],
+config: { hscale: 2 },
+head:{text: 'Center-Aligned Rising Edge Source Synchronous Inputs Setup'},
+}
